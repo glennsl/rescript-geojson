@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "rescript build -with-deps",
+    "start": "rescript build -w -with-deps",
+    "clean": "rescript clean",
+    "fmt": "rescript format -all"
+  },
+  "dependencies": {
+    "rescript": "^11.0.0-beta.1"
+  }
+}

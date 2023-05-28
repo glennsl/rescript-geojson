@@ -1,0 +1,6 @@
+{
+  "name": "rescript-geojson",
+  "sources": {
+    "dir": "src"
+  }
+}

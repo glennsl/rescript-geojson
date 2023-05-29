@@ -1,4 +1,24 @@
 {
+  "name": "@glennsl/rescript-geojson",
+  "version": "0.1.0",
+  "description": "Simple GeoJSON decoder library for ReScript based on @glennsl/rescript-json-combinators.",
+  "author": "Glenn Slotte <glenn@slotte.net>",
+  "license": "(LGPL-3.0 OR MPL-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glennsl/rescript-geojson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glennsl/rescript-geojson/issues"
+  },
+  "homepage": "https://github.com/glennsl/rescript-geojson#readme",
+  "keywords": [
+    "rescript",
+    "geojson",
+    "geo",
+    "json",
+    "@glennsl/rescript-json-combinators"
+  ],
   "scripts": {
     "build": "rescript build -with-deps",
     "start": "rescript build -w -with-deps",

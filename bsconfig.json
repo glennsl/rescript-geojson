@@ -3,4 +3,6 @@
   "sources": {
     "dir": "src"
   }
+  "bs-dependencies": ["@glennsl/rescript-json-combinators"],
+  "bsc-flags": ["-open JsonCombinators"]
 }

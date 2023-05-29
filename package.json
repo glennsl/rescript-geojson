@@ -19,6 +19,7 @@
     "json",
     "@glennsl/rescript-json-combinators"
   ],
+  "files": ["src/*.res*", "bsconfig.json"],
   "scripts": {
     "build": "rescript build -with-deps",
     "start": "rescript build -w -with-deps",

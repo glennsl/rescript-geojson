@@ -1,8 +1,14 @@
 {
   "name": "rescript-geojson",
-  "sources": {
-    "dir": "src"
-  }
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "test",
+      "type": "dev"
+    }
+  ],
   "bs-dependencies": ["@glennsl/rescript-json-combinators"],
   "bsc-flags": ["-open JsonCombinators"]
 }

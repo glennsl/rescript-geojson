@@ -180,3 +180,27 @@ test(polygonWithHole)
 test(multiPoint)
 test(multiLineString)
 test(multiPolygon)
+
+module Example = {
+  let json = %raw(`{
+        type: 'Feature',
+        geometry: {
+            type: 'Polygon',
+            coordinates: [
+                [
+                    [-180.0, 10.0],
+                    [20.0, 90.0],
+                    [180.0, -5.0],
+                    [-30.0, -90.0],
+                ],
+            ],
+        },
+        properties: null,
+    }`)
+
+  switch json->Json.decode(GeoJSON.Decode.object) {
+  | Ok(Feature({geometry: Polygon({coordinates})})) => Js.log2("Polygon coordinates: ", coordinates)
+  | Ok(_) => Js.log("not a feature with polygon?!")
+  | Error(err) => Js.log(err)
+  }
+}

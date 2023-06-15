@@ -61,7 +61,7 @@ module Decode = {
 
   let geometryCollection = geometry =>
     object(field => Geometry.GeometryCollection({
-      geometries: field.required(. "coordinates", array(geometry)),
+      geometries: field.required(. "geometries", array(geometry)),
     }))
 
   let geometry = {

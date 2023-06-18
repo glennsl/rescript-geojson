@@ -1,6 +1,6 @@
 {
   "name": "@glennsl/rescript-geojson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple GeoJSON decoder library for ReScript based on @glennsl/rescript-json-combinators.",
   "author": "Glenn Slotte <glenn@slotte.net>",
   "license": "(LGPL-3.0 OR MPL-2.0)",

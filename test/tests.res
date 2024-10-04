@@ -200,6 +200,8 @@ module Example = {
 
   switch json->Json.decode(GeoJSON.Decode.object) {
   | Ok(Feature({geometry: Polygon({coordinates})})) => Js.log2("Polygon coordinates: ", coordinates)
+  | Ok(Polygon({coordinates})) => Js.log2("Polygon coordinates: ", coordinates)
+  | Ok(...Geometry.t as geom) => Js.log2("Other geometry: ", geom)
   | Ok(_) => Js.log("not a feature with polygon?!")
   | Error(err) => Js.log(err)
   }

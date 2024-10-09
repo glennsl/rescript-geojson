@@ -28,7 +28,7 @@
     "test": "npm run build && node lib/js/test/tests.js"
   },
   "dependencies": {
-    "@glennsl/rescript-json-combinators": "^1.2.1"
+    "@glennsl/rescript-json-combinators": "^1.4.0"
   },
   "devDependencies": {
     "rescript": "^11.1.4"
